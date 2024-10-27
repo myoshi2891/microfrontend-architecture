@@ -6,7 +6,7 @@ module.exports = {
 		filename: "[name].[contenthash].js",
 	},
 	resolve: {
-		extensions: ["js", "vue"],
+		extensions: [".js", ".vue"],
 	},
 	module: {
 		rules: [
@@ -22,8 +22,8 @@ module.exports = {
 				test: /\.scss|css$/,
 				use: [
 					"vue-style-loader",
-					"css-loader",
 					"style-loader",
+					"css-loader",
 					"sass-loader",
 				],
 			},
